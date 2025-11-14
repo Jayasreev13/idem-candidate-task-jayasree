@@ -19,7 +19,7 @@ There is no single “correct” answer.
 # Project Structure
 
 ```text
-idem-ls-candidate-task/
+idem-candidate-task/
 ├─ README.md                  # ← You are here
 ├─ requirements.txt
 ├─ data/
