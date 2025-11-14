@@ -1,17 +1,15 @@
-# idem-candidate-task
-
-# iDem Research Task – Lexical Simplification (EN/FR)
+# iDem Research Task (EN/FR)
 
 Welcome! This mini-project is part of the selection process for a **Research
 Assistant** role on the iDem project (“Inclusive Democratic Spaces for
 Deliberation and Participation”).
 
 You are given **two CSV datasets**, one for English and one for French, built
-from encyclopedic / wiki-style texts with sentence-level annotations for
-lexical simplification.
+from wikipedia and vikidea texts with sentence-level annotations for
+complexity classification.
 
 We are interested in **how** you work:
-- how you understand and interrogate noisy data  
+- how you understand data  
 - how you design and justify simple experiments  
 - how clearly you explain your methods and findings  
 
@@ -39,7 +37,6 @@ Each has the following columns:
 - `Sentence` – a single sentence in that article (EN or FR)
 - `Label` – binary label (1 = sentence annotated as **simplified**,  
   0 = sentence annotated as **complex**).  
-  **Important:** labels are noisy; some sentences may be mislabeled.
 - `LengthWords` – sentence length in tokens
 - `LengthChars` – sentence length in characters
 
@@ -50,8 +47,7 @@ More detail is in `data/README.md`.
 ## 2. Tasks
 
 Please work through the tasks below. Focus on **clarity of reasoning** and
-**reproducibility**. It is completely fine if you cannot do everything
-exhaustively.
+**reproducibility**.
 
 You may use either English, French, or both. When you choose only one language,
 please say why.
@@ -63,7 +59,7 @@ Create a short overview of the datasets for each language:
 1. Basic statistics:
    - number of sentences
    - distribution of `Label` (how many 0 / 1)
-   - average `LengthWords` and `LengthChars` by label
+   - IQR range.
 2. Inspect a small sample of sentences and comment briefly:
    - How would *you* describe the difference between “complex” and
      “simplified” sentences here?
