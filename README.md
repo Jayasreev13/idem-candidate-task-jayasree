@@ -21,7 +21,13 @@ There is no single “correct” answer.
 
 ## 1. Data
 
-In `data/` we provide:
+### Download data
+
+The datasets used in this task can be downloaded from the GitHub Release:
+
+https://github.com/Nouran-Khallaf/idem-candidate-task/releases/latest
+
+Place both files into the `data/` folder before running the notebooks.
 
 - `En-Dataset.csv` – English sentences  
 - `Fr-Dataset.csv` – French sentences  
