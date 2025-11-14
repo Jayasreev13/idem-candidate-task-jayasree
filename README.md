@@ -1,6 +1,6 @@
 # iDem Research Task (EN/FR)
 
-Welcome! This mini-project is part of the selection process for a **Research
+Welcome! This Task is part of the selection process for a **Research
 Assistant** role on the iDem project (“Inclusive Democratic Spaces for
 Deliberation and Participation”).
 
