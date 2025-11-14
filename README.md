@@ -179,7 +179,7 @@ src/03_build_parallel_corpus.py
 
 ---
 
-### Task 3 – Do something interesting with the corpora
+### Task 3 – Do something interesting with the corpora (optional)
 
 Choose **one** of the following (or propose your own small idea):
 
