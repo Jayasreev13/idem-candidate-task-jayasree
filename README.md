@@ -109,8 +109,6 @@ In particular:
 Your goal is to estimate the **true proportion of simplified sentences** in each dataset,
 including the proportion of simplified exact or Vikidea-style sentences that appear in Wikipedia.
 
-### Please:
-
 1. **Compute the naïve estimate**:
 
    ```
