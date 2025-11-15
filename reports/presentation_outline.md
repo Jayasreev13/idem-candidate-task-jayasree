@@ -1,7 +1,7 @@
 # Suggested slide outline
 
 You do **not** need to follow this exactly, but it may help structure your deck.
-Please keep the total length to about 10 slides.
+Please keep the total length to not more than 7 slides.
 
 ---
 
@@ -29,16 +29,7 @@ Please keep the total length to about 10 slides.
 
 ---
 
-## – Task 2: parallel corpus
-
-- Alignment strategy (diagram or bullets)
-- Filters applied
-- Size of final corpus and a few example pairs
-- Your judgement of quality
-
----
-
-## – Task 3: chosen analysis
+## – Task 2: chosen analysis
 
 - Short description of the experiment (classifier, scores, or patterns)
 - Main results (metric, plots, or examples)

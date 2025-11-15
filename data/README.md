@@ -15,7 +15,7 @@ Both files share the same schema:
 | `ID`          | string  | Article / document identifier                                |
 | `Name`        | string  | Article title                                                |
 | `Sentence`    | string  | Individual sentence text (in EN or FR)                      |
-| `Label`       | int     | 0 = sentence annotated as **simplified**, 1 = **complex**   |
+| `Label`       | int     | 0 = sentence annotated as **simple**, 1 = **complex**   |
 | `LengthWords` | int     | Number of tokens in the sentence                            |
 | `LengthChars` | int     | Number of characters in the sentence                        |
 
