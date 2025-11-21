@@ -5,7 +5,7 @@ Assistant** role on the iDem project (“Inclusive Democratic Spaces for
 Deliberation and Participation”).
 
 You are given **two CSV datasets**, one for English and one for French, built
-from wikipedia and vikidea texts with sentence-level annotations for
+from Wikipedia and Vikidia texts with sentence-level annotations for
 complexity classification.
 
 We are interested in:
@@ -178,7 +178,7 @@ Please include:
   
 ### **2. A presentation (PDF)**
 
-  - Prepare a slide deck (up to **7 slides**), summarising:
+  - Prepare a slide deck (up to **5 slides**), summarising:
      - problem understanding
      - methods
      - key results
