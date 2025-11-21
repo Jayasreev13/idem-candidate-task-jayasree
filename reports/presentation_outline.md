@@ -1,46 +1,48 @@
-# Suggested slide outline
+# iDem Research Task – 5‑Slide Presentation
 
-You do **not** need to follow this exactly, but it may help structure your deck.
-Please keep the total length to not more than 7 slides.
 
 ---
 
-## – Data understanding
+## **Slide 1 — Data Understanding (EN & FR)**
 
-- Brief description of the EN/FR datasets
-- Example sentence(s)
-- Any obvious issues or noise you noticed
-
----
-
-## – Task 0: overview
-
-- Key statistics (counts, label distribution, length)
-- One or two short comments (e.g. label imbalance, surprises)
+* Two datasets (EN/FR) combining Wikipedia + Vikidia sentences.
+* Columns: `Sentence`, `Label` (0 = simple, 1 = complex), length features.
+* Observations: Vikidia is shorter/simpler; Wikipedia varies more. Some label noise + near-duplicate Wiki/Vikidia sentences.
 
 ---
 
-## – Task 1: estimating simplified proportion
+## **Slide 2 — Task 0: Quick Overview**
 
-- Your improved method:
-  - key idea (1–2 bullet points)
-  - main assumptions
-- Final estimates (EN/FR) in a small table or plot
-
----
-
-## – Task 2: chosen analysis
-
-- Short description of the experiment (classifier, scores, or patterns)
-- Main results (metric, plots, or examples)
-- One or two interesting observations / error patterns
+* Stats: sentence counts, label distribution, length IQR (words/chars).
+* Notes: mild imbalance; some long "simple" sentences; some "complex" ones appear simple.
+* Early signs of noise and style overlap.
 
 ---
 
-## Takeaways & future work
-
-- What you learned about the data
-- Main limitations of your approach
-- What you would try next with more time
+## **Slide 3 — Task 1: Estimating True Simple Proportion**
 
 
+**Improved estimation:**
+
+* Detect mislabeled simple sentences inside the "complex" group using:
+
+  * similarity to Vikidia, **or**
+  * a classifier trained on clean subsets.
+
+**Output:**
+* estimated % of Vikidia-like sentences inside Wiki
+
+---
+
+## **Slide 4 — Task 2: Additional Analysis**
+
+(Example: simple vs complex classifier)
+* Report accuracy/F1.
+* Error examples: short but dense sentences → predicted complex; long/simple → predicted simple.
+
+---
+
+## **Slide 5 — Takeaways **
+
+**Learnings:** 
+**Limitations:** 
