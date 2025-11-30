@@ -1,1 +1,42 @@
+I couldn’t upload the full dataset and how I generated a smaller version using Python. The original dataset files (En-Dataset.csv and Fr-Dataset.csv) exceeded that size. When I tried to upload them, the interface returned the message:
 
+“Yowza, that’s a big file. Try again with a file smaller than 25MB.”
+
+This meant:
+
+The system could not accept the original file(s).I needed to provide a reduced or sample version instead. The limitation was on the platform, not on my Python code or dataset. This is a typical restriction to protect server memory and upload bandwidth on web-based systems.
+
+How I Reduced the Dataset to a Smaller File Using Python
+
+To stay within the upload limit, I created a smaller, representative sample of the full dataset using Python.
+
+This ensures: the structure is preserved, random sampling prevents bias, file size is dramatically reduced
+
+Here is the exact code I used:
+
+import pandas as pd
+
+# Load the large dataset
+df = pd.read_csv("En-Dataset.csv")
+
+# Create a representative sample (e.g., 5,000 rows)
+df_small = df.sample(5000, random_state=42)
+
+# Save the smaller dataset
+df_small.to_csv("En-Dataset-SMALL.csv", index=False)
+
+print("Small file created:", df_small.shape)
+
+
+I repeated the same process for the French dataset:
+
+df = pd.read_csv("Fr-Dataset.csv")
+df_small = df.sample(5000, random_state=42)
+df_small.to_csv("Fr-Dataset-SMALL.csv", index=False)
+
+
+
+If needed, I could also control size more tightly, for example taking only the columns required:
+
+cols = ["ID", "Name", "Sentence", "Label"]
+df_small = df[cols].sample(4000, random_state=42)
